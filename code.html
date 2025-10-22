@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mechanic Village - AI Diagnosis</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea2a33",
+            "background-light": "#f8f6f6",
+            "background-dark": "#1A1A1A",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col dark group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-white flex size-12 shrink-0 items-center" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">AI Diagnosis</h2>
+<div class="size-12 shrink-0"></div>
+</div>
+<div class="p-4 space-y-6">
+<!-- Diagnosis Card -->
+<div class="bg-[#211111] p-6 rounded-xl">
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight text-left pb-3">Low Tire Pressure (Front Left)</h1>
+<p class="text-primary text-sm font-bold leading-normal pb-3 pt-1">Inflate within 24 hrs</p>
+<p class="text-white text-base font-normal leading-normal">Estimated Cost: $0 - $5</p>
+</div>
+<!-- Action Steps Section -->
+<div>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Action Steps</h2>
+<div class="space-y-4">
+<div class="flex items-start space-x-4 p-4 bg-[#211111] rounded-lg">
+<div class="bg-primary/20 text-primary w-8 h-8 flex items-center justify-center rounded-full font-bold">1</div>
+<p class="text-white flex-1">Use a tire pressure gauge to check the pressure in your front left tire. Refer to the sticker on the driver's side door jamb for the recommended PSI.</p>
+</div>
+<div class="flex items-start space-x-4 p-4 bg-[#211111] rounded-lg">
+<div class="bg-primary/20 text-primary w-8 h-8 flex items-center justify-center rounded-full font-bold">2</div>
+<p class="text-white flex-1">If the pressure is low, add air until it reaches the recommended level. Most gas stations have air pumps available for use.</p>
+</div>
+</div>
+</div>
+<!-- Educational Content -->
+<div class="relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="A person checking tire pressure with a gauge." class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJchT4dpUn3rYVWdZvQEzvFKz3Og157ZWjnjBTpyGoQ-uwSnV32oWhkapPppqWHYncKYBcUXvQwitcm1RZEJf8tk0tX446itgvdn4Cd3LL26rD_ZosedFq9rYN5XrKlfYuANlB1ENTQ-Qaq-Kip1cU_ZkEsbkTmEbz8k-FP_pxE8ZbKarDu1J0GVPIQhRE65bx0M8MKAMTFdNH80fa1hwvnIam7L4OhvZ5G74tb5KRztc-BfiDlKXVCTK_8tDKYdF8ivXqtnnpip0"/>
+<div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-4">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-white text-4xl">play_circle</span>
+<h3 class="text-white text-lg font-bold">How to Check Tire Pressure in 60s</h3>
+</div>
+</div>
+</div>
+<!-- Location Button -->
+<button class="w-full bg-primary text-white py-4 rounded-lg flex items-center justify-center space-x-2 font-bold text-lg">
+<span class="material-symbols-outlined">local_gas_station</span>
+<span>Find Air Pump Near You</span>
+</button>
+</div>
+<!-- Action Bar (Footer) -->
+<div class="sticky bottom-0 bg-background-dark p-4 mt-auto border-t border-white/10">
+<div class="flex justify-around items-center">
+<button class="flex flex-col items-center text-white space-y-1">
+<span class="material-symbols-outlined">save</span>
+<span class="text-xs">Save to My Car</span>
+</button>
+<button class="flex flex-col items-center text-white space-y-1">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs">Set Reminder</span>
+</button>
+<button class="flex flex-col items-center text-white space-y-1">
+<span class="material-symbols-outlined">share</span>
+<span class="text-xs">Share with Mechanic</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
